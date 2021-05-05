@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Codeclif</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <script src="js/owl.carousel.js"></script>
+
+</head>
+
+<body>
+    <!--Navigation bar-->
+    <div class="main">
+        <header>
+            <div class="navbar">
+                <div class="nav_left">
+                    <div class="nav_left_items">Home</div>
+                    <div class="nav_left_items">Python</div>
+                    <div class="nav_left_items">Web Designing</div>
+                </div>
+                <div class="nav_right">
+                    <div class="nav_right_items login">Login</div>
+                    <div class="nav_right_items signup">Signup</div>
+                </div>
+            </div>
+
+            <div class="mobnavbar">
+                <div onclick="navtoggle()" class="mobnavbtn"><i class="fas fa-bars"></i></div>
+                <div class="mobnav">
+                    <div class="mobnavitems">Home</div>
+                    <div class="mobnavitems">Python</div>
+                    <div class="mobnavitems">Web Designing</div>
+                    <div class="mobnavitems">Login</div>
+                    <div class="mobnavitems">Signup</div>
+                </div>
+            </div>
+            <script>
+                $('.mobnavbtn').click(function () {
+                    $('.mobnav').slideToggle();
+                })
+            </script>
+        </header>
+
+        <!--Header section-->
+        <section style="padding-top:2.5vh;">
+            <div class="headmass">
+                <div class="headmass-cont-left">
+                    <div id="headmassleft1" class="headmass-cont-left-items"> <img src="images/codeclif-logo.png"
+                            alt="logo" width="70%s">
+                    </div>
+                    <div id="headmassleft2" class="headmass-cont-left-items">
+                        <span class="headtext">Hi Robots</span>
+                        <span>I'm shahid. Experienced Python Django Developer and i want to teach coding to everyone for
+                            FREE!</span>
+                        <span class="browse-btn">BROWSE COURSES</span>
+                    </div>
+                </div>
+                <div class="headmass-cont-right">
+                    <img src="images/header-img.svg" width="100%" alt="">
+                </div>
+            </div>
+        </section>
+        <!--Why pay to institution section-->
+        <section>
+            <div class="whypay">
+                <div class="whypayhead">Why Pay More to Institutions?</div>
+                <div class="whypayflex">
+                    <div class="whypayimg"><img src="images/lgirlthink.svg" alt="girl" width="100%"></div>
+                    <div class="whypaypara">People says hard work is the key to success but today's era "internet is the
+                        key to success ", you can learn coding for free from internet there are many website, youtube
+                        channels who provide material for free like us.
+                        We are here to teach you coading for free.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Our courses-->
+
+        <section>
+            <div class="ourcourses">
+                <div class="ourcourses-head">OUR COURSES</div>
+                <div class="coursecarousel">
+                    <div class="my-carousel">
+                        <div class="owl-carousel owl-theme">
+                            <div class="item">
+                                <div class="item-head">PYTHON PROGRAMMING</div>
+                                <div class="item-logo"><img src="images/python-logo.png" width="50%" alt="Python Logo">
+                                </div>
+                                <div class="item-footer">
+                                    <span>FREE VIDEOS</span>
+                                    <div class="footer-ratings">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <iframe width="520" height="390" src="https://www.youtube.com/embed/PAruweRJNvk?list=RDPAruweRJNvk"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </section>
+        <script>
+            $('.owl-carousel').owlCarousel({
+                loop: false,
+                margin: 10,
+                nav: true,
+                responsive: {
+                    1000: {
+                        items: 1
+                    },
+                    600: {
+                        items: 0
+                    },
+                    1000: {
+                        items: 0
+                    }
+                }
+            })
+        </script>
+    </div>
+
+
+</body>
+
+</html>

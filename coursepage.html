@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/coursepage.css">
+</head>
+
+<body>
+    <!--Navigation bar-->
+    <div class="main">
+        <header>
+            <div class="navbar">
+                <div class="nav_left">
+                    <div class="nav_left_items">Home</div>
+                    <div class="nav_left_items">Python</div>
+                    <div class="nav_left_items">Web Designing</div>
+                </div>
+                <div class="nav_right">
+                    <div class="nav_right_items login">Login</div>
+                    <div class="nav_right_items signup">Signup</div>
+                </div>
+            </div>
+
+            <div class="mobnavbar">
+                <div onclick="navtoggle()" class="mobnavbtn"><i class="fas fa-bars"></i></div>
+                <div class="mobnav">
+                    <div class="mobnavitems">Home</div>
+                    <div class="mobnavitems">Python</div>
+                    <div class="mobnavitems">Web Designing</div>
+                    <div class="mobnavitems">Login</div>
+                    <div class="mobnavitems">Signup</div>
+                </div>
+            </div>
+            <script>
+                $('.mobnavbtn').click(function () {
+                    $('.mobnav').slideToggle();
+                })
+            </script>
+
+            <div class="banner">
+                <div class="banner-wrapper">
+                    <div class="banner-head">Complete Python Mastery</div>
+                    <div class="banner-para">Everything You Need to Program in Python in One Course <div> (Includes 3
+                            Real-world Projects)</div>
+                    </div>
+                    <div class="banner-btn">
+                        <span class="enroll-btn"><i class="fas fa-shopping-cart"></i>-Enroll Now!</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <div class="course">
+            <div class="course-left">
+                <div class="course-left-cont">
+                    <div class="course-left-cont-head">Add up to $30k to your salary by mastering Python!</div>
+                    <div class="course-left-cont-para">Python is the most popular programming language in the world. The
+                        average salary for a Python developer is $116k in the USA. That's almost $30k more than other
+                        developers!
+
+                        Python is used by big companies like Google, Facebook, Dropbox, Reddit, Spotify, Quora, etc.
+
+                        Mathematicians, scientists, engineers and developers love it because of its simple and elegant
+                        syntax.
+
+                        It's the #1 language for AI and machine learning, and the ideal language to learn for beginners.
+                        Much easier than C++ or JavaScript!
+
+                        This course teaches you everything Python has to offer from the basics to more advanced topics.
+
+                        A perfect mix of theory and practice, packed with real-world examples, exercises and
+                        step-by-step solutions - free of "fluff" and lengthy description!
+                    </div>
+                </div>
+            </div>
+            <div class="course-right">
+                <div class="right-box">
+                    <img src="images/right-box.svg" width="100%" height="100%">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

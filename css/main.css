@@ -1,0 +1,311 @@
+/** Navbar CSS **/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    width: 100%;
+    position: fixed;
+    display: flow-root;
+    font-size: 1.5em;
+    font-family:'Segoe UI';
+    box-shadow: 0px 5px 9px -2px rgba(148,148,148,1);
+    background: white;
+}
+
+.navbar .nav_left{
+    margin-left: 5%;
+    display: flex;
+    float: left;
+    flex-wrap: nowrap;
+}
+.navbar .nav_left .nav_left_items{
+    padding: 13px;
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+
+.navbar .nav_left .nav_left_items:hover{
+    background-color: rgb(237, 237, 237);
+    color: #9b2963;
+}
+
+
+.navbar .nav_right{
+    margin-right: 5%;
+    display: flex;
+    float: right;
+    flex-wrap: nowrap;
+}
+
+.navbar .nav_right .nav_right_items{
+    padding: 13px;
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+.navbar .nav_right .nav_right_items:hover{
+    background-color: rgb(237, 237, 237);
+    color: #9b2963;
+}
+
+.navbar .nav_right .signup{
+    padding: 10px;
+    background: rgb(240, 29, 145);
+    color: white;
+}
+
+/** Mobile Menu **/
+.mobnavbar{
+    position: fixed;
+    width: 100%;
+    display: none;
+    margin: 0;
+    background-color: #9b2963;
+}
+.mobnavbtn{
+    justify-content: end;
+    align-items: end;
+}
+
+.mobnavbtn > i{
+    margin: auto;
+    color: rgb(84, 84, 84);
+    background:white;
+    padding: 10px;
+    border-radius: 1px;
+    border-bottom: 1px solid black;
+}
+
+.mobnav{
+    height: 100vh;
+    background-color: #ff9c38;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    
+}
+
+.mobnavitems{
+    font-family: 'Segoe UI';
+    font-size:2.5em;
+    padding: 0.5em;
+    height:10vh;
+}
+
+@media only screen and (max-width:650px){
+    .mobnavbar{
+        display: flow-root;
+    }
+
+    .navbar{
+        display: none;
+    }
+}
+
+/**Head mass **/
+
+.headmass{
+    display: flex;
+    padding-top: 54px;
+    padding: 5%;
+    padding-top: 60px;
+    font-family:'Segoe UI';
+}
+
+.headmass .headmass-cont-left{
+    color: #9b2963;
+    margin-left:5%;
+    
+}
+
+#headmassleft1{
+    margin-left:-18%;
+}
+
+.headmass .headmass-cont-left .headmass-cont-left-items:nth-child(2){
+    width: 100%;
+    font-size: 1.5em;
+
+}
+
+.headtext{
+    color:#9b2963;
+    font-size:40px;
+    display:block;
+}
+.browse-btn{
+    margin-top: 5px;
+    display: inline-block;
+    background-color: rgb(180, 29, 112);
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.browse-btn:hover{
+    transition: 0.2s ease-in;
+    background-color: rgb(237, 237, 237);
+    color:#9b2963;
+    cursor: pointer;
+}
+.headmass .headmass-cont-right{
+    width: 100%;
+    margin-right: 5%;
+    margin-top:19px;
+}
+
+@media only screen and (max-width:650px){
+    .headmass{
+     padding-top: 0;
+        
+    }
+    .headmass-cont-left{
+        flex-direction: column;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+    #headmassleft2{
+        width: 100%;
+    }
+    .headmass-cont-left-items > img{
+        width: 100%;
+    }
+    .headmass-cont-right{
+        display: none;
+    }
+}
+
+/** why pay css **/
+.whypay{
+    font-family: 'Segoe UI';
+    color: white;
+    padding: 5%;
+    background: #9b2963;
+    padding-bottom: none;
+}
+
+.whypay .whypayhead{
+    
+    font-size:3rem;
+    text-align: center;
+}
+
+.whypay .whypayflex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.whypay .whypayflex .whypayimg{
+    padding-top:2%;
+    width: 30%;
+}
+.whypay .whypayflex .whypaypara{
+
+    font-size: 1.5em;
+    padding-top: 6%;
+    width: 70%;
+}
+
+@media only screen and (max-width:650px){
+    .whypay{
+        padding: 0;
+    }
+    .whypay .whypayhead{
+        font-size: 2em;
+    }
+
+    .whypay .whypayflex{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+}
+
+/** why pay css **/
+.ourcourses{
+    background: #f1eb6d;
+    padding-top: 2%;
+    font-family: 'Segoe UI';
+}
+
+.ourcourses .carousel-arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 100px;
+}
+.ourcourses .carousel-arrow i{
+    border-radius: 100%;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding: 1.5em;
+    padding: 1.5em; 
+    background: #9b2963;
+    font-size: 1em;
+    color: white;
+    transition: 0.3s;
+
+}
+
+.ourcourses .carousel-arrow i:hover{
+    cursor: pointer;
+    background-color: rgb(237, 237, 237);
+    color: #9b2963;
+}
+
+.ourcourses .ourcourses-head{
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Segoe UI';
+    color: #9b2963;
+}
+.ourcourses .coursecarousel{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex: wrap;
+    
+}
+
+.my-carousel .item{
+    margin: 2%;
+    width: 300px;
+    height: 350px;
+    border-radius: 50px;
+}
+
+.my-carousel .item .item-head{
+    background: #9b2963;
+    color: white;
+    text-align: center;
+    font-size: 1.3em;
+}
+.my-carousel .item .item-logo{
+    text-align: center; 
+    background: white;
+}
+.my-carousel .item .item-footer{
+    text-align: center;
+    background: #9b2963;
+    padding-top: 10%;
+}
+.my-carousel .item .item-footer > span{
+    margin-top: 2%;
+    background: #f1eb6d;
+    color: #9b2963;
+    font-size: 2em;
+    padding: 3%;
+    border-radius: 10px;
+}
+
+.my-carousel .item .item-footer .footer-ratings{
+    padding: 10%;
+    color: #f1eb6d;
+}

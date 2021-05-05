@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    font-size: 10px;
+}
+
+.navbar{
+    width: 100%;
+    position: fixed;
+    display: flow-root;
+    font-size: 1.5em;
+    font-family:'Segoe UI';
+    box-shadow: 0px 5px 9px -2px rgba(148,148,148,1);
+    background: white;
+}
+
+.navbar .nav_left{
+    margin-left: 5%;
+    display: flex;
+    float: left;
+    flex-wrap: nowrap;
+}
+.navbar .nav_left .nav_left_items{
+    padding: 13px;
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+
+.navbar .nav_left .nav_left_items:hover{
+    background-color: rgb(237, 237, 237);
+    color: #9b2963;
+}
+
+
+.navbar .nav_right{
+    margin-right: 5%;
+    display: flex;
+    float: right;
+    flex-wrap: nowrap;
+}
+
+.navbar .nav_right .nav_right_items{
+    padding: 13px;
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+.navbar .nav_right .nav_right_items:hover{
+    background-color: rgb(237, 237, 237);
+    color: #9b2963;
+}
+
+.navbar .nav_right .signup{
+    padding: 10px;
+    background: rgb(240, 29, 145);
+    color: white;
+}
+
+/** Mobile Menu **/
+.mobnavbar{
+    position: fixed;
+    width: 100%;
+    display: none;
+    margin: 0;
+    background-color: #9b2963;
+}
+.mobnavbtn{
+    justify-content: end;
+    align-items: end;
+}
+
+.mobnavbtn > i{
+    margin: auto;
+    color: rgb(84, 84, 84);
+    background:white;
+    padding: 10px;
+    border-radius: 1px;
+    border-bottom: 1px solid black;
+}
+
+.mobnav{
+    height: 100vh;
+    background-color: #ff9c38;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    
+}
+
+.mobnavitems{
+    font-family: 'Segoe UI';
+    font-size:2.5em;
+    padding: 0.5em;
+    height:10vh;
+}
+
+@media only screen and (max-width:650px){
+    .mobnavbar{
+        display: flow-root;
+    }
+
+    .navbar{
+        display: none;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Passion+One&display=swap');
+
+
+/**Banner **/
+.banner{
+    text-align: center;
+    padding-top: 10vh;
+    background: rgb(36,13,0);
+    background: linear-gradient(90deg, rgba(36,13,0,1) 0%, rgba(121,35,9,1) 0%, rgba(255,0,74,1) 100%);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.banner .banner-wrapper .banner-head{
+    font-size: 6rem;
+    padding: 4rem;
+}
+
+.banner .banner-wrapper .banner-para{
+    font-size: 3rem;
+    padding: 2rem 4rem 2rem 4rem;
+    margin: 0 6rem 0 6rem;
+}
+
+.banner .banner-wrapper .banner-btn{
+    text-align: center;
+    padding: 4rem;
+    margin: 1rem;
+    font-size: 2rem;   
+}
+.banner .banner-wrapper .banner-btn .enroll-btn{
+    background:#ff9c38;
+    padding: 1.5rem;
+    font-family: 'Passion One', cursive;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+.banner .banner-wrapper .banner-btn .enroll-btn:hover{
+    background: #9b2963;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:650px){
+    .banner .banner-wrapper .banner-para{
+        margin: 0;
+    }
+}
+
+/* About Course */
+
+@import url('https://fonts.googleapis.com/css2?family=B612&display=swap');
+.course{
+    display: flex;
+}
+
+.course .course-left{
+    font-family: 'B612', sans-serif;
+    width: 50%;
+    padding: 1%;
+}
+
+.course .course-left .course-left-cont > div{
+    margin: 2%;
+}
+.course .course-left .course-left-cont .course-left-cont-head{
+    font-size: 3rem;
+}
+.course .course-left .course-left-cont .course-left-cont-para{
+    font-size:2rem;
+    line-height: 1.7;
+    text-align: justify;   
+}
+
+
+.course .course-right{
+    width: 50%;
+    margin: 2%;
+}
+
+.course .course-right .right-box{
+    border:1px solid black;
+    border-radius: 40px;
+    
+}
+
+.course .course-right .right-box img{
+    border-radius: 40px;
+    
+    
+}
