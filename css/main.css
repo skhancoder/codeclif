@@ -14,6 +14,7 @@
     box-shadow: 0px 5px 9px -2px rgba(148,148,148,1);
     background: white;
     min-height: 8vh;
+    z-index: 10;
 }
 
 .navbar .nav_left{
@@ -252,6 +253,7 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    font-family: 'Segoe UI';
 }
 .courses_wrapper > .course > .course1, .course2, .course3{
     height: 400px;
@@ -270,7 +272,10 @@
 }
 .courses_wrapper > .course > div > .image{
     height: 150px;
-    
+}
+.courses_wrapper > .course > div > .image > img{
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
 }
 .courses_wrapper > .course > div > .name{
     background-color: #9b2963;
@@ -282,10 +287,57 @@
 }
 .courses_wrapper > .course > div > .skills{
     height: 180px;
-    border: 1px solid black;
     display: flex;
+    font-family: 'Segoe UI';
+    color: white;
+    
 }
 
-.courses_wrapper > .course > div > .skills{
+.courses_wrapper > .course > div > .skills > .skills_left{
+    width: 70%;
+    background-color: rgb(240, 29, 145);
+    padding: 10px;
+    border-bottom-left-radius: 25px;
     
+}
+.courses_wrapper > .course > div > .skills > .skills_left > .skills_items_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+} 
+
+.courses_wrapper > .course > div > .skills > .skills_left > .skills_items_wrapper > .skills_items{
+  background-color: rgb(206, 23, 124);
+  padding: 5px;
+  border-radius: 25px;
+  margin: 2px;
+} 
+.courses_wrapper > .course > div > .skills > .skills_right{
+    width: 30%; 
+    border-bottom-right-radius: 25px;
+    background-color: rgb(206, 23, 124);
+}   
+.courses_wrapper > .course > div > .skills > .skills_right:hover{
+    animation: enroll 0.5s ease 1;
+    background-color: rgb(3, 192, 3);
+    cursor: pointer;
+}
+
+.courses_wrapper > .course > div > .skills > .skills_right > ul{
+    list-style: none;
+    text-align: center;
+    line-height: 30px;
+
+}
+
+@keyframes enroll {
+    from{
+        height: 0%;   
+        background-color: rgb(12, 65, 180);
+    }
+    to{
+        height: 100%;
+        background-color: rgb(3, 192, 3);
+    }
+
 }
