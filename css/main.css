@@ -13,6 +13,7 @@
     font-family:'Segoe UI';
     box-shadow: 0px 5px 9px -2px rgba(148,148,148,1);
     background: white;
+    min-height: 8vh;
 }
 
 .navbar .nav_left{
@@ -63,6 +64,7 @@
     display: none;
     margin: 0;
     background-color: #9b2963;
+    z-index: 10;
 }
 .mobnavbtn{
     justify-content: end;
@@ -113,6 +115,7 @@
     padding: 5%;
     padding-top: 60px;
     font-family:'Segoe UI';
+    min-height: 92vh;
 }
 
 .headmass .headmass-cont-left{
@@ -186,6 +189,7 @@
     padding: 5%;
     background: #9b2963;
     padding-bottom: none;
+    min-height: 92vh;
 }
 
 .whypay .whypayhead{
@@ -228,84 +232,60 @@
 }
 
 /** why pay css **/
-.ourcourses{
-    background: #f1eb6d;
-    padding-top: 2%;
-    font-family: 'Segoe UI';
+
+/* Our courses */ 
+.courses_wrapper{
+    min-height: 92vh;
+    background-color: #ff9c38;
 }
 
-.ourcourses .carousel-arrow{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 100px;
-}
-.ourcourses .carousel-arrow i{
-    border-radius: 100%;
-    margin-left: 1%;
-    margin-right: 1%;
-    padding: 1.5em;
-    padding: 1.5em; 
-    background: #9b2963;
-    font-size: 1em;
+.courses_wrapper > .courses_head{
+    padding: 10px 0 10px 0;
     color: white;
-    transition: 0.3s;
-
-}
-
-.ourcourses .carousel-arrow i:hover{
-    cursor: pointer;
-    background-color: rgb(237, 237, 237);
-    color: #9b2963;
-}
-
-.ourcourses .ourcourses-head{
     text-align: center;
-    font-size: 2em;
+    font-size: 3em;
     font-family: 'Segoe UI';
-    color: #9b2963;
 }
-.ourcourses .coursecarousel{
+
+.courses_wrapper > .course{
+    padding: 10px 0 10px 0;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex: wrap;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.courses_wrapper > .course > .course1, .course2, .course3{
+    height: 400px;
+    width: 300px;
+    transition: all 0.5s ease;
+    background-color: white;
+    border-radius: 25px;
+    margin: 10px;
+
+}
+
+.courses_wrapper > .course > div:hover{
+    box-shadow: 0px 0px 15px 2px #9b2963;
+    z-index: 0;
+    transform: scale(1.05);
+}
+.courses_wrapper > .course > div > .image{
+    height: 150px;
     
 }
-
-.my-carousel .item{
-    margin: 2%;
-    width: 300px;
-    height: 350px;
-    border-radius: 50px;
-}
-
-.my-carousel .item .item-head{
-    background: #9b2963;
+.courses_wrapper > .course > div > .name{
+    background-color: #9b2963;
+    height: 70px;
     color: white;
     text-align: center;
-    font-size: 1.3em;
+    font-size: 1.5em;
+    line-height: 70px;
 }
-.my-carousel .item .item-logo{
-    text-align: center; 
-    background: white;
-}
-.my-carousel .item .item-footer{
-    text-align: center;
-    background: #9b2963;
-    padding-top: 10%;
-}
-.my-carousel .item .item-footer > span{
-    margin-top: 2%;
-    background: #f1eb6d;
-    color: #9b2963;
-    font-size: 2em;
-    padding: 3%;
-    border-radius: 10px;
+.courses_wrapper > .course > div > .skills{
+    height: 180px;
+    border: 1px solid black;
+    display: flex;
 }
 
-.my-carousel .item .item-footer .footer-ratings{
-    padding: 10%;
-    color: #f1eb6d;
+.courses_wrapper > .course > div > .skills{
+    
 }
