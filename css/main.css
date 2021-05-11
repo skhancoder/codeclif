@@ -341,3 +341,92 @@
     }
 
 }
+
+
+@media only screen and (max-width:650px){
+    .courses_wrapper > .courses_head{
+        font-size: 2em;
+    }
+}
+
+/* How its works */ 
+
+.how_works{
+    font-family: 'Segoe UI';
+    min-height: 92vh;
+}
+.how_works > .head{
+    text-align: center;
+    padding: 25px;
+    color: #9b2963;
+    font-size: 3em;
+}
+.how_works > .head_para{
+    text-align: center;
+    max-width: 60%;
+    margin: auto;
+    font-size: 1.5em;
+}
+.how_works > .works_cards{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.how_works > .works_cards > .card{
+    width: 300px;
+}
+.how_works > .works_cards > .card > div{
+    margin: 10px;
+}
+.how_works > .works_cards > .card > .title{
+    text-align: center;
+    font-weight: 500;
+    color: #9b2963;
+    font-size: 1.5em;
+}
+
+.how_works > .works_cards > .card > .para{
+    text-align: center;
+}
+
+/* Coding Mantra */ 
+
+.coding_mantra{
+    min-height: 92vh;
+    background-color:#9b2963;
+    font-family: 'Segoe UI';
+    box-sizing: border-box;
+}
+
+.coding_mantra > .head{
+    padding: 25px 0 0 0 ;
+    text-align: center;
+    color: white;
+    font-size: 3em;
+    text-transform: uppercase;
+}
+
+.coding_mantra > .mantra_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+.coding_mantra > .mantra_wrapper > .left{
+    width: 30%;   
+}
+
+.coding_mantra > .mantra_wrapper > .middle{
+    width: 40%;    
+}
+
+.coding_mantra > .mantra_wrapper > .right{
+    width: 30%;
+}
+
+p{
+    color: green;
+    font-size: 25px;
+}
+
